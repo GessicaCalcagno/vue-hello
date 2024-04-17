@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Hello</title>
+    <!-- Vue js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <!-- // Qui dentro il codice HTML sarà gestito da vue, e quindi sarà dinamico -->
+        <h4>{{ greeting }}</h4>
+        <div>
+          <label for="user">Qual è il tuo segno zodiacale?</label>
+          <input type="text" id="user" v-model="zo" />
+        </div>
+        <div>
+          <label for="user2">Dimmi il tuo ascendente</label>
+          <input type="text" id="user2" v-model="zo1" />
+        </div>
+        <button @click="funnyMessage">Clicca per il risultato</button>
+       
+        <hr />
+        <h1>{{ message }}</h1>
+        <img :src="imageUrl" alt="">
+    </div>
+  
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
