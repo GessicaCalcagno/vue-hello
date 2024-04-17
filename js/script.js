@@ -23,7 +23,6 @@ createApp({
     // Qua mettiamo tutte le funzioni che possiamo invocare nella nostra app
     //PARTE LOGICA
     funnyMessage: function () {
-      this.zoo = "";
       this.message = "Dalle scimmie ♥";
       this.imageUrl = "./img/scimmia.jpg";
     },
